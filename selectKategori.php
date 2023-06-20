@@ -3,6 +3,7 @@
 include 'koneksi.php';
 
 $connection = getConnection();
+header('Access-Control-Allow-Origin: http://localhost:5173');
 
     if ($connection) {
         try {
