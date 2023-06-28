@@ -1,4 +1,3 @@
-
 <?php
 include 'koneksi.php';
 
@@ -6,7 +5,7 @@ $connection = getConnection();
 
     if ($connection) {
         try {
-            $statement = $connection->query("SELECT * FROM kategori");
+            $statement = $connection->query("SELECT * FROM anggota");
 
             $statement->setFetchMode(PDO::FETCH_ASSOC);
 
